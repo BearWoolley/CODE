@@ -1,3 +1,7 @@
+ 
+
+ 
+
 import java.io.*;
 /**
  * This interface specifies the behaviour expected from the CODE
@@ -109,10 +113,10 @@ public interface Game extends Serializable
     
     /** Meets the challenge represented by the challenge number (or returns 
      * " - no such challenge").Find a champion from the army who can meet the 
-     * challenge and return a result which is one of the following: “Challenge 
-     * won by...“ – add reward to treasury, set the champion to restingand add 
-     * the name of champion, “Challenge lost as no champion available” – deduct 
-     * reward from treasury,“Challenge lost on skill level”- deduct reward from 
+     * challenge and return a result which is one of the following: ï¿½Challenge 
+     * won by...ï¿½ ï¿½ add reward to treasury, set the champion to restingand add 
+     * the name of champion, ï¿½Challenge lost as no champion availableï¿½ ï¿½ deduct 
+     * reward from treasury,ï¿½Challenge lost on skill levelï¿½- deduct reward from 
      * treasury, the champion is killed, so add "<champion name> is dead" to the 
      * return String. If the challenge is lost and there is no money left, add 
      * "You have NO money in the treasury".

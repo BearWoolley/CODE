@@ -1,15 +1,15 @@
 import java.io.*;
 /**
  * Provide a command line interface for the CODE game.
- * 
- * @author A.A.Marczyk
- * @version 02/02/14
- */
+ **/
 public class GameIO
 {
     private static Game gp ;
     private static BufferedReader myIn = new BufferedReader(new InputStreamReader(System.in));
 
+    /**
+     * command line interface for the CODE game, choices 0-12 that implement the gameio
+     **/
     public static void main(String[] args)
     {
         int choice;
@@ -19,7 +19,7 @@ public class GameIO
         {
             System.out.println("Enter player's name");
             String s = myIn.readLine();
-            gp = new Player(s); // create Player
+            gp = new Player(s, "champions.txt"); // create Player
             choice = -1;
             while (choice != 0 && !gp.hasLost())
             {
@@ -129,8 +129,12 @@ public class GameIO
                 
     }
     
+    /**
+     * command line interface for the gameio class, commands for the choices from 0-12
+     **/
     private static int getMenuItem()throws IOException
-    {   int option = -1;  
+    {   int option = -1;
+        System.out.println("");
         System.out.println("Main Menu");
         System.out.println("1. list all champions for hire");
         System.out.println("2. list my army of champions"); 
